@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+header {
+  background: linear-gradient(90deg, #ff0000, #ffa500);
+  padding: 2rem;
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: #222;
+}
+
+.profile-pic {
+  width: 120px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.order {
+  padding: 2rem;
+  background: #1a1a1a;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+button {
+  background: #ff4500;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ff6600;
+}
+
+footer {
+  padding: 1rem;
+  background: #111;
+  text-align: center;
+}
+
+.discord-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #5865f2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pulse 2s infinite;
+  z-index: 999;
+}
+
+.discord-float img {
+  width: 35px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.donate-link {
+  text-align: center;
+  margin: 2rem;
+}
