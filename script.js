@@ -11,3 +11,8 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 revealElements.forEach(el => observer.observe(el));
+
+const discordBtn = document.querySelector('.discord-float');
+discordBtn.addEventListener('click', () => {
+  alert('You are about to join my Discord server!');
+});
